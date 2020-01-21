@@ -7,7 +7,7 @@ BUILDPACK_DIR=$(dirname $BIN_DIR)
 
 echo "You provided the arguments:" "$@"
 
-BUILD_DIR = $0
+BUILD_DIR=$0
 
 echo "BUILD DIR: $BUILD_DIR"
 
