@@ -5,7 +5,8 @@
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILDPACK_DIR=$(dirname $BIN_DIR)
 
+echo "You provided the arguments:" "$@"
 
-echo "BUILD DIR: $BUILD_DIR"
+echo "BUILD DIR: BUILD_DIR"
 
 #cd $BUILD_DIR/config/locales && $BIN_DIR/support/phraseapp pull
