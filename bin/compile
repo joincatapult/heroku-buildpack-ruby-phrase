@@ -5,4 +5,4 @@
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILDPACK_DIR=$(dirname $BIN_DIR)
 
-cd $BUILD_DIR && $BIN_DIR/support/phraseapp pull
+cd $BUILD_DIR/config/locales && $BIN_DIR/support/phraseapp pull
