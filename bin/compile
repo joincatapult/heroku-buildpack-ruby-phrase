@@ -11,4 +11,8 @@ BUILD_DIR=$1
 
 echo "BUILD DIR: $BUILD_DIR"
 
-cd $BUILD_DIR/config/locales && $BIN_DIR/support/phraseapp pull
+cd $BUILD_DIR/config/locales
+
+echo ls -lah
+
+$BIN_DIR/support/phraseapp pull
