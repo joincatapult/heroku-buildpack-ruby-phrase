@@ -5,14 +5,11 @@
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILDPACK_DIR=$(dirname $BIN_DIR)
 
-echo "You provided the arguments:" "$@"
-
 BUILD_DIR=$1
 
-echo "BUILD DIR: $BUILD_DIR"
+RAILS_PHRASE_DIR=$BUILD_DIR/config/locales
+REACT_PHRASE_DIR=$BUILD_DIR/react-apps/config/locales
 
-cd $BUILD_DIR/config/locales && $BIN_DIR/support/phraseapp pull
+cd $RAILS_PHRASE_DIR && $BIN_DIR/support/phraseapp pull
 
-echo "ls: $(ls -lah)"
-
-#$BIN_DIR/support/phraseapp pull
+cd $REACT_PHRASE_DIR && $BIN_DIR/support/phraseapp pull
