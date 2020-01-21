@@ -7,4 +7,4 @@ BUILDPACK_DIR=$(dirname $BIN_DIR)
 
 echo $BUILD_DIR
 
-cd $BUILD_DIR/config/locales && $BIN_DIR/support/phraseapp pull
+#cd $BUILD_DIR/config/locales && $BIN_DIR/support/phraseapp pull
