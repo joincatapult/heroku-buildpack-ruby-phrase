@@ -13,6 +13,6 @@ echo "BUILD DIR: $BUILD_DIR"
 
 cd $BUILD_DIR/config/locales
 
-echo ls -lah
+echo "ls: $(ls)"
 
 $BIN_DIR/support/phraseapp pull
